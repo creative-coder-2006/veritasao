@@ -1,0 +1,44 @@
+Of course, here is the full code for `requirements.txt`.
+
+This file lists all the Python libraries required to run the VERITAS.AI project. Freezing the versions ensures that the application will work consistently across different environments.
+
+```
+# requirements.txt
+
+# --- Main Application Framework ---
+streamlit==1.28.2
+
+# --- AI & Machine Learning ---
+# For PyTorch, it's often best to install it separately following the
+# official instructions for your specific hardware (CUDA vs CPU).
+# These are the CPU versions.
+torch==2.1.1
+torchvision==0.16.1
+torchaudio==2.1.1
+transformers==4.35.0
+scikit-learn==1.3.2
+numpy==1.26.1
+scipy==1.11.3
+librosa==0.10.1
+
+# --- Web Scraping & Content Retrieval ---
+beautifulsoup4==4.12.2
+requests==2.31.0
+newspaper3k==0.2.8
+praw==7.7.1
+yt-dlp==2023.11.16
+
+# --- Audio & Video Processing ---
+openai-whisper==20231117 # For audio transcription
+opencv-python==4.8.1.78   # For video frame processing
+soundfile==0.12.1         # For creating dummy audio files
+
+# --- Authentication & Security ---
+bcrypt==4.1.2
+
+# --- OpenAI API for XAI ---
+openai==0.28.1 # Note: v1.x has breaking changes, use v0.28 for create syntax
+
+# --- Environment & Configuration ---
+python-dotenv==1.0.0
+```
